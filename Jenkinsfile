@@ -24,7 +24,7 @@ pipeline {
 
                 // Use a tool like SSH to remotely execute commands on the server (assumes you've set up SSH keys for passwordless access)
 
-                    bat 'docker run -d --name python-proj -p 8080:8080 python-proj-img'
+                    bat 'docker run -d --name python-proj -p 5000:5000 python-proj-img'
 
             }
         }
