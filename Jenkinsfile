@@ -14,7 +14,7 @@ pipeline {
         stage('Package') {
             steps {
                 // Create the Docker image for your Python application
-                sh 'docker build -t python-proj-img .'
+                bat 'docker build -t python-proj-img .'
             }
         }
 
