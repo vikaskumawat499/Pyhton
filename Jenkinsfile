@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 // Checkout the source code from your version control system (e.g., Git)
-                git 'https://github.com/your/repo.git'
+                git 'https://github.com/NikitasGithub/python-proj.git'
                 // Install Python dependencies
                 bat 'pip install -r requirements.txt'
             }
