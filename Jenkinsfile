@@ -14,7 +14,7 @@ pipeline {
         stage('Package') {
             steps {
                 // Create the Docker image for your Python application
-                bat 'docker build -t python-proj-img .'
+                sh 'docker build -t python-proj-img .'
             }
         }
 
@@ -24,7 +24,7 @@ pipeline {
 
                 // Use a tool like SSH to remotely execute commands on the server (assumes you've set up SSH keys for passwordless access)
 
-                    bat 'docker run -d --publish 5000:5000 python-proj-img'
+                    sh 'docker run -d --publish 5000:5000 python-proj-img'
 
             }
         }
